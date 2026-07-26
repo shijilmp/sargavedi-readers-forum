@@ -6,6 +6,10 @@ color:#333;
 line-height:1.6;
 }
 
+a, button, .month-card, .nav-btn, .start-btn {
+-webkit-tap-highlight-color: transparent;
+}
+
 .hero{
 min-height:100vh;
 background:#3c6e71 url("images/collage.png") center center / cover no-repeat;
@@ -244,6 +248,17 @@ background-color:#3c6e71;
   border-left: 4px solid #ccc;
   padding-left: 15px;
   margin: 20px 0;
+}
+.simple-italic-bold {
+  font-size: 17px;
+  line-height: 1.6;
+  font-style: italic;
+  font-weight: bold;
+  margin: 20px 0;
+  background: #eaf4fb;
+  border-radius: 16px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .month-card strong{
 display:block;
