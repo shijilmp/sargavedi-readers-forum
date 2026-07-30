@@ -1,0 +1,5 @@
+PS C:\WINDOWS\System32> cd C:\Sargavedi
+PS C:\Sargavedi> git status
+PS C:\Sargavedi> git add .
+PS C:\Sargavedi> git commit -m "Update website content"
+PS C:\Sargavedi> git push
