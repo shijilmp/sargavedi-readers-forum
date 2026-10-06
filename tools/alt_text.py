@@ -20,6 +20,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DRY = "--dry" in sys.argv
 SKIP_DIRS = {".git", "tools", "node_modules"}
+# search-engine ownership files (e.g. google0123abcd.html) must stay exactly as issued
+VERIFY_FILE = re.compile(r"^google[0-9a-f]+\.html$")
 EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️‍]")
 PLACEHOLDER = re.compile(r"Book Cover$", re.I)
 NEWS = "പത്ര മാധ്യമങ്ങളിലൂടെ"
@@ -107,7 +109,7 @@ def main():
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
         for name in filenames:
-            if not name.endswith(".html"):
+            if not name.endswith(".html") or VERIFY_FILE.match(name):
                 continue
             path = os.path.join(dirpath, name)
             rel = os.path.relpath(path, ROOT).replace(os.sep, "/")

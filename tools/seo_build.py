@@ -32,6 +32,8 @@ DRY = "--dry" in sys.argv
 TODAY = datetime.date.today().isoformat()
 
 SKIP_DIRS = {".git", "tools", "node_modules"}
+# search-engine ownership files (e.g. google0123abcd.html) must stay exactly as issued
+VERIFY_FILE = re.compile(r"^google[0-9a-f]+\.html$")
 
 TITLE_OVERRIDES = {
     "index.html": "ആലക്കോട് സർഗവേദി റീഡേഴ്സ് ഫോറം | Sargavedi Readers Forum, Alakode",
@@ -133,7 +135,7 @@ def list_pages():
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
         for name in filenames:
-            if name.endswith(".html"):
+            if name.endswith(".html") and not VERIFY_FILE.match(name):
                 full = os.path.join(dirpath, name)
                 pages.append(os.path.relpath(full, ROOT).replace(os.sep, "/"))
     return sorted(pages)
