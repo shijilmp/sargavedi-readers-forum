@@ -272,8 +272,7 @@
     top.innerHTML =
       "<div class=\"utility\"><div class=\"util-inner\"><span>" + today + " · ആലക്കോട്, കണ്ണൂർ</span>" +
       "<span class=\"util-links\"><a href=\"" + makeUrl("about.html") + "\">സർഗ്ഗവേദിയെക്കുറിച്ച്</a>" +
-      "<a href=\"" + makeUrl("history.html") + "\">ചരിത്രം</a>" +
-      "<a href=\"" + makeUrl("years.html") + "\">ഡിജിറ്റൽ ശേഖരം</a></span></div></div>" +
+      "<a href=\"" + makeUrl("history.html") + "\">ചരിത്രം</a></span></div></div>" +
       "<div class=\"masthead\"><a class=\"mast-logo\" href=\"" + makeUrl("index.html") + "\">" +
       "<img src=\"" + makeUrl("logo.svg") + "\" alt=\"\" width=\"76\" height=\"76\">" +
       "<span class=\"mast-text\"><span class=\"mast-title\">സർഗവേദി</span>" +
