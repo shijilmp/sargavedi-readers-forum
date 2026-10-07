@@ -378,7 +378,7 @@ def org_node():
         "telephone": "+91-9495358978",
         "contactPoint": {
             "@type": "ContactPoint",
-            "name": "എ.ആർ. പ്രസാദ് മാസ്റ്റർ",
+            "name": "എ.ആർ. പ്രസാദ്",
             "telephone": "+91-9495358978",
             "email": "sargavedireadersforumalakode@gmail.com",
             "contactType": "general enquiries",

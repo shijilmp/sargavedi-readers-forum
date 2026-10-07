@@ -1,6 +1,14 @@
 {
  "events": [
   {
+   "title": "കവിതാ സമാഹാരം പ്രകാശനം: അത്തിവൃക്ഷം പൂക്കുന്നില്ലെങ്കിലും",
+   "cat": "പുസ്തക പ്രകാശനം",
+   "date": "2026-10-04",
+   "venue": "നടുപ്പറമ്പിൽ മിനി ഓഡിറ്റോറിയം, കൊട്ടയാട്",
+   "href": "2026/Athivriksham_Book_Release_2026/page1.html",
+   "thumb": "images/thumbs/2026-Athivriksham-Book-Release-2026-page1.jpg"
+  },
+  {
    "title": "പി ടി തങ്കപ്പൻ മാസ്റ്റർ അനുസ്മരണവും സാഹിത്യ പുരസ്‌കാര സമർപ്പണവും",
    "cat": "പുരസ്കാരം",
    "date": "2026-09-05",
@@ -87,14 +95,6 @@
    "venue": "വടക്കനാട് സജിയുടെയും രതി ടീച്ചറിൻ്റെയും വീട്ടുമുറ്റം",
    "href": "before2026/santhosh-echikkanam/page1.html",
    "thumb": "images/thumbs/before2026-santhosh-echikkanam-page1.jpg"
-  },
-  {
-   "title": "അനുസ്മരണം: വയലാർ അനുസ്മരണവും ഗാനസന്ധ്യയും",
-   "cat": "അനുസ്മരണം",
-   "date": "2025-10-26",
-   "venue": "ആലക്കോട് കരയോഗമന്ദിരം ഹാൾ",
-   "href": "before2026/vayalar_2025/page1.html",
-   "thumb": "images/thumbs/before2026-vayalar-2025-page1.jpg"
   }
  ],
  "books": [

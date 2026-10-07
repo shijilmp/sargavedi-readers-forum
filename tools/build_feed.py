@@ -130,6 +130,8 @@ def category(title):
         return "പുരസ്കാരം"
     if "അനുസ്മരണ" in t:
         return "അനുസ്മരണം"
+    if "പ്രകാശന" in t and "പുസ്തക ചർച്ച" not in t:
+        return "പുസ്തക പ്രകാശനം"
     if "പുസ്തക" in t:
         return "പുസ്തക ചർച്ച"
     if "ജാലകം" in t or "ആകാശവാണി" in t:
@@ -275,8 +277,9 @@ def front_html(evs, bks, wrs, veet, lsts):
         % (esc(e["href"]), esc(e["cat"]), esc(e["title"]), esc(fmt_date(e["date"])), img_tag(e.get("thumb"), e["title"]))
         for e in rest)
     text_cards = "".join(
-        '<a class="tcard" href="%s"><span class="fcat">%s</span><span class="ttitle">%s</span><span class="fmeta">%s</span></a>'
-        % (esc(e["href"]), esc(e["cat"]), esc(e["title"]), esc(fmt_date(e["date"]))) for e in more)
+        '<a class="tcard" href="%s">%s<span class="fcat">%s</span><span class="ttitle">%s</span><span class="fmeta">%s</span></a>'
+        % (esc(e["href"]), '<span class="tthumb">%s</span>' % img_tag(e.get("thumb"), e["title"]) if e.get("thumb") else "",
+           esc(e["cat"]), esc(e["title"]), esc(fmt_date(e["date"]))) for e in more)
     ticker = "".join('<a href="%s">%s</a>' % (esc(e["href"]), esc(e["title"])) for e in evs[:5])
 
     def band(title, href, items, kind, cls=""):
