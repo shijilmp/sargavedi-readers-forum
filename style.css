@@ -623,9 +623,13 @@ line-height:1.25;
 }
 
 .mast-title{
-font-size:42px;
-font-weight:800;
-color:#1f5f60;
+display:block;
+width:268px;
+height:54px;
+margin-bottom:4px;
+background-color:#1f7a4a;
+-webkit-mask:url(wordmark.png) left center / contain no-repeat;
+mask:url(wordmark.png) left center / contain no-repeat;
 }
 
 .mast-sub{

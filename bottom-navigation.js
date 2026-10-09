@@ -275,7 +275,7 @@
       "<a href=\"" + makeUrl("history.html") + "\">ചരിത്രം</a></span></div></div>" +
       "<div class=\"masthead\"><a class=\"mast-logo\" href=\"" + makeUrl("index.html") + "\">" +
       "<img src=\"" + makeUrl("logo.svg") + "\" alt=\"\" width=\"76\" height=\"76\">" +
-      "<span class=\"mast-text\"><span class=\"mast-title\">സർഗവേദി</span>" +
+      "<span class=\"mast-text\"><span class=\"mast-title\" role=\"img\" aria-label=\"സർഗവേദി\"></span>" +
       "<span class=\"mast-sub\">റീഡേഴ്സ് ഫോറം · ആലക്കോട്</span></span></a></div>";
 
     const nav = document.createElement("nav");
